@@ -1,0 +1,36 @@
+.workshop-grid {
+  max-width: 720px;
+}
+
+.workshop-copy > p {
+  color: var(--ink-soft);
+  font-size: 1.05rem;
+}
+
+.workshop-copy h3 {
+  margin-top: 2rem;
+  font-size: 1rem;
+  font-family: var(--font-body);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.workshop-list {
+  margin: 0.8rem 0 0;
+  padding-left: 1.2rem;
+  color: var(--ink-soft);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.workshop-note {
+  font-style: italic;
+  color: var(--ink-soft);
+  margin-top: 1.5rem;
+}
+
+.workshop-copy .btn {
+  margin-top: 1rem;
+}

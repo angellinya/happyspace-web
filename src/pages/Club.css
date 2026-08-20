@@ -1,0 +1,54 @@
+.club-body {
+  padding-top: 0;
+}
+
+.club-body-grid {
+  max-width: 640px;
+}
+
+.club-copy p {
+  color: var(--ink-soft);
+  font-size: 1.05rem;
+}
+
+.club-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.club-preview {
+  background: var(--paper-alt);
+}
+
+.club-preview-grid {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.club-preview-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 2rem;
+}
+
+.club-preview-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
+}
+
+.club-preview-card p {
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+  margin: 0;
+}
+
+@media (max-width: 780px) {
+  .club-preview-grid {
+    grid-template-columns: 1fr;
+  }
+}

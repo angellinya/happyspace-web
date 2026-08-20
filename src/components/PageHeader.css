@@ -1,0 +1,46 @@
+.page-header {
+  position: relative;
+  padding: clamp(4rem, 10vw, 6.5rem) 0 clamp(2.5rem, 6vw, 4rem);
+  background-size: cover;
+  background-position: center;
+}
+
+.page-header[style] {
+  color: var(--paper);
+  padding-top: clamp(6rem, 14vw, 9rem);
+  padding-bottom: clamp(4rem, 10vw, 6rem);
+}
+
+.page-header-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(23, 29, 58, 0.35) 0%, rgba(23, 29, 58, 0.78) 100%);
+}
+
+.page-header-content {
+  position: relative;
+  max-width: 700px;
+}
+
+.page-header[style] .eyebrow {
+  color: var(--accent-soft);
+}
+
+.page-header h1 {
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  margin-bottom: 0.6rem;
+}
+
+.page-header[style] h1 {
+  color: var(--paper);
+}
+
+.page-header p {
+  font-size: 1.05rem;
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+.page-header[style] p {
+  color: var(--accent-soft);
+}

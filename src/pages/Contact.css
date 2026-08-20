@@ -1,0 +1,61 @@
+.contact-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: clamp(2.5rem, 6vw, 5rem);
+  align-items: start;
+}
+
+.contact-info h2,
+.contact-booking h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.contact-email,
+.contact-instagram {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  color: var(--ink);
+}
+
+.contact-info h3 {
+  margin-top: 2.2rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-family: var(--font-body);
+  color: var(--ink-soft);
+}
+
+.contact-hours {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 260px;
+}
+
+.contact-hours li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.4rem;
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+}
+
+.contact-booking p {
+  color: var(--ink-soft);
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 860px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}

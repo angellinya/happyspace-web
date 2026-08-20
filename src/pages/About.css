@@ -1,0 +1,100 @@
+.founder {
+  border-bottom: 1px solid var(--line);
+}
+
+.founder-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: start;
+}
+
+.founder-reverse .founder-grid {
+  grid-template-columns: 1.15fr 0.85fr;
+}
+
+.founder-reverse .founder-image {
+  order: 2;
+}
+
+.founder-image img {
+  position: sticky;
+  top: 100px;
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.founder-copy h2 {
+  font-size: 1.4rem;
+  font-style: italic;
+  color: var(--ink-soft);
+  margin-bottom: 1.5rem;
+}
+
+.founder-copy p {
+  color: var(--ink-soft);
+}
+
+.edu-heading {
+  margin-top: 2rem;
+  font-size: 1rem;
+  font-family: var(--font-body);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.edu-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.about-cta {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: clamp(4rem, 10vw, 7rem) 0;
+}
+
+.about-cta-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(23, 29, 58, 0.72);
+}
+
+.about-cta-content {
+  position: relative;
+}
+
+.about-cta h2 {
+  color: var(--paper);
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  margin-bottom: 1.8rem;
+}
+
+.about-cta .btn {
+  border-color: var(--paper);
+}
+
+@media (max-width: 860px) {
+  .founder-grid,
+  .founder-reverse .founder-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .founder-reverse .founder-image {
+    order: 0;
+  }
+
+  .founder-image img {
+    position: static;
+  }
+}
